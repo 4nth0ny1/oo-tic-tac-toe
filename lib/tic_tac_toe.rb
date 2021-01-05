@@ -79,8 +79,8 @@ class TicTacToe
     end
   
     def full?
-      @board.any? do |square| 
-        square != " " 
+      !@board.any? do |square| 
+        square == " " 
       end
     end
 
